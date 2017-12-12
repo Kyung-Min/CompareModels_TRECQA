@@ -6,6 +6,7 @@ These files provides five baseline models, i.e. average pooling, RNN, CNN, RNNCN
 Model Comparison
 ----------------
 All models were trained on train-all using Keras 2.1.2.  
+You can download the glove parameters at here http://nlp.stanford.edu/data/glove.6B.zip  
 Batch normalization was used to improve the performance of the models over the results of the pasky's experiments.  
 https://github.com/brmson/dataset-sts/tree/master/data/anssel/wang
 
