@@ -1,11 +1,11 @@
 # CompareModels_TRECQA
 In a QA system that needs to infer from unstructured corpus, one challenge is to choose the sentence that contains best answer information for the given question.
 
-These files provides four baseline models, i.e. average pooling, RNN, CNN, QA-LSTM/CNN+attention (Tan, 2015; state-of-art 2015), for the TrecQA task (wang et al. 2007).
+These files provides five baseline models, i.e. average pooling, RNN, CNN, RNNCNN, QA-LSTM/CNN+attention (Tan, 2015; state-of-art 2015), for the TrecQA task (wang et al. 2007).
 
 Model Comparison
 ----------------
-All models were trained on train-all using Keras 2.0.6.  
+All models were trained on train-all using Keras 2.1.2.  
 Batch normalization was used to improve the performance of the models over the results of the pasky's experiments.  
 https://github.com/brmson/dataset-sts/tree/master/data/anssel/wang
 
@@ -14,12 +14,13 @@ https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)
 
 | Model                    | devMRR   | testMRR  | etc
 |--------------------------|----------|----------|---------
-| Avg.                     | 0.83315  | 0.807789 | 
+| Avg.                     | 0.83315  | 0.807789 | pdim=0.5, Ddim=1
 | CNN                      | 0.865507 | 0.859114 | pdim=0.5, p_layers=1, Ddim = 1
-| RNN(LSTM)                | 0.833242 | 0.754818 | lstm, proj=False, Ddim = 2
+| RNN(LSTM)                | 0.842302 | 0.827154 | sdim=5~7, rnn=CuDNNLSTM, rnnbidi_mode=concatenate, Ddim = 2, proj=False
+| RNN+CNN                  | 0.862692 | 0.803874 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1
 | QA-LSTM/CNN+attention    |    -     |    -     | state-of-art 2015
 
-
+	
 This year(2017)'s new results (TO DO list to implement)
 ----------------
 | Model                    | testMRR  | etc
