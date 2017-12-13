@@ -27,14 +27,16 @@ This year(2017)'s new results (TO DO list to implement)
 | Model                    | testMRR  | etc
 |--------------------------|----------|---------
 | HyperQA                  |  0.865   | Tay et al. (2017)
-| BiMPM                    |	0.875	  | Wang et al. (2017)
-| Compare-Aggregate	       |	0.899   | Bian et al. (2017)
-| IWAN	                   |	0.889   | Shen et al. (2017)
+| BiMPM                    |  0.875   | Wang et al. (2017)
+| Compare-Aggregate	   |  0.899   | Bian et al. (2017)
+| IWAN	                   |  0.889   | Shen et al. (2017)
 
 
 Reference
 -----------------
+- Wang, Mengqiu and Smith, Noah A. and Mitamura, Teruko. 2007. What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA. In EMNLP-CoNLL 2007.
 - Ming Tan, Cicero dos Santos, Bing Xiang & Bowen Zhou. 2015. LSTM-Based Deep Learning Models for Nonfactoid Answer Selection. In eprint arXiv:1511.04108.
+- Sergey Ioffe, Christian Szegedy. 2015 Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. In ICML 2015. 
 - Yi Tay, Luu Anh Tuan, Siu Cheung Hui. 2017 Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks. In eprint arXiv: 1707.07847.
 - Zhiguo Wang, Wael Hamza and Radu Florian. 2017. Bilateral Multi-Perspective Matching for Natural Language Sentences. In eprint arXiv:1702.03814.
 - Weijie Bian, Si Li, Zhao Yang, Guang Chen, Zhiqing Lin. 2017. A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection. In CIKM 2017.
