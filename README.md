@@ -1,7 +1,7 @@
 # CompareModels_TRECQA
 In a QA system that needs to infer from unstructured corpus, one challenge is to choose the sentence that contains best answer information for the given question.
 
-These files provide five baseline models, i.e. average pooling, RNN, CNN, RNNCNN, QA-LSTM/CNN+attention (Tan, 2015; state-of-art 2015), for the TrecQA task (wang et al. 2007).
+These files provide six baseline models, i.e. average pooling, RNN, CNN, RNNCNN, QA-LSTM/CNN+attention (Tan, 2015; state-of-art 2015), AP-LSTM/CNN (Santos, 2016; state-of-art 2016) for the TrecQA task (wang et al. 2007).
 
 Model Comparison
 ----------------
@@ -20,7 +20,7 @@ https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)
 | RNN(LSTM)                | 0.842302 | 0.827154 | sdim=5~7, rnn=CuDNNLSTM, rnnbidi_mode=concatenate, Ddim = 2, proj=False
 | RNN+CNN                  | 0.862692 | 0.803874 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1
 | QA-LSTM/CNN+attention    | 0.875321 | 0.832281 | Ddim=[1, 1/2], p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1, adim=0.5, state-of-art 2015
-| AP-LSTM/CNN              | 0.883974 | 0.822923 | Ddim=[1, 1/2], p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=5, w_feat_model=rnn (I haven' yet found optimal hyperparams..), state-of-art 2016
+| AP-LSTM/CNN              | 0.883974 | 0.822923 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=5, w_feat_model=rnn (I haven' yet found optimal hyperparams..), state-of-art 2016
 
 	
 This year(2017)'s new results (TO DO list to implement)
@@ -38,6 +38,7 @@ Reference
 - Wang, Mengqiu and Smith, Noah A. and Mitamura, Teruko. 2007. What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA. In EMNLP-CoNLL 2007.
 - Ming Tan, Cicero dos Santos, Bing Xiang & Bowen Zhou. 2015. LSTM-Based Deep Learning Models for Nonfactoid Answer Selection. In eprint arXiv:1511.04108.
 - Sergey Ioffe, Christian Szegedy. 2015 Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. In ICML 2015. 
+- Cicero dos Santos, Ming Tan, Bing Xiang, Bowen Zhou. 2016. Attentive Pooling Networks. In eprint axXiv:1602.03609.
 - Yi Tay, Luu Anh Tuan, Siu Cheung Hui. 2017 Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks. In eprint arXiv: 1707.07847.
 - Zhiguo Wang, Wael Hamza and Radu Florian. 2017. Bilateral Multi-Perspective Matching for Natural Language Sentences. In eprint arXiv:1702.03814.
 - Weijie Bian, Si Li, Zhao Yang, Guang Chen, Zhiqing Lin. 2017. A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection. In CIKM 2017.
