@@ -15,7 +15,7 @@ https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)
 
 | Model                    | devMRR   | testMRR  | etc
 |--------------------------|----------|----------|---------
-| Avg.                     | 0.83315  | 0.807789 | pdim=0.5, Ddim=1
+| Avg.                     | 0.855998 | 0.810032 | pdim=0.5, Ddim=1
 | CNN                      | 0.865507 | 0.859114 | pdim=0.5, p_layers=1, Ddim = 1
 | RNN(LSTM)                | 0.842302 | 0.827154 | sdim=5~7, rnn=CuDNNLSTM, rnnbidi_mode=concatenate, Ddim = 2, proj=False
 | RNN+CNN                  | 0.862692 | 0.803874 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1
