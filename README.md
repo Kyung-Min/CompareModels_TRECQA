@@ -20,7 +20,7 @@ https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)
 | RNN(LSTM)                | 0.842302 | 0.827154 | sdim=5~7, rnn=CuDNNLSTM, rnnbidi_mode=concatenate, Ddim = 2, proj=False
 | RNN+CNN                  | 0.862692 | 0.803874 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1
 | QA-LSTM/CNN+attention    | 0.875321 | 0.832281 | Ddim=[1, 1/2], p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=1, adim=0.5, state-of-art 2015
-| AP-LSTM/CNN (Attentive Pooling)             | 0.883974 | 0.822923 | Ddim=2, p_layers=2, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=5, w_feat_model=rnn (I haven' yet found optimal hyperparams..), state-of-art 2016
+| AP-LSTM/CNN (Attentive Pooling)             | 0.883974 | 0.850000 | Ddim=0.1, p_layers=1, pdim=0.5, rnn=CuDNNLSTM, rnnbidi_mode=concatenate sdim=5, w_feat_model=rnn, sdim=4, state-of-art 2016
 
 	
 This year(2017)'s new results (TO DO list to implement)
